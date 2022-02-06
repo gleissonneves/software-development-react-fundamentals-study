@@ -9,16 +9,29 @@ import Card from './components/layout/Card'
 import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
 
+import ListaAlunos from './components/repeticao/ListaAlunos'
+import ProdutoList from './components/repeticao/TabelaProduto'
+
 const styleH1 = {
     textAlign: 'center', 
+    marginTop: '30px', 
     marginBottom: '30px', 
 }
 
+// https://colorhunt.co/
 export default () => (
     <>
         <h1 style={ styleH1 }> Fundamentos React </h1>
         
         <article className="app">
+            <Card title="#008 - Tabela de produtos" color="#B33030">
+                <ProdutoList/>
+            </Card>
+
+            <Card title="#007 - Lista de repetição" color="#B33030">
+                <ListaAlunos/>
+            </Card>
+
             <Card title="#006 - criando components com children/2" color="#C0ADFF">
                 <Familia sobrenome="Silva">
                     <FamiliaMembro nome="Pedro" />
@@ -31,7 +44,7 @@ export default () => (
                 essa foi fácil
             </Card>   
             
-            <Card title="#004 - Aula/desafio" color="#C4C6E7">
+            <Card title="#004 - Aula/desafio" color="#B33030">
                 <Aleatorio min={2} max={10} />
             </Card>
             
