@@ -6,7 +6,7 @@ export default props => {
     })[0]
     
     const ifChildren = children.filter(child => {
-        return child !== elseChild && child !== elseIfChild
+        return child !== elseChild
     })
 
     if(test) {
