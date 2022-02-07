@@ -12,11 +12,16 @@ import FamiliaMembro from './components/basicos/FamiliaMembro'
 import ListaAlunos from './components/repeticao/ListaAlunos'
 import ProdutoList from './components/repeticao/TabelaProduto'
 
+import ParOuImpar from './components/condicional/ParOuImpar'
+import UserInfo from './components/condicional/UserInfo'
+
 const styleH1 = {
     textAlign: 'center', 
     marginTop: '30px', 
     marginBottom: '30px', 
 }
+
+const usuario = { nome: 'Gleisson' };
 
 // https://colorhunt.co/
 export default () => (
@@ -24,6 +29,14 @@ export default () => (
         <h1 style={ styleH1 }> Fundamentos React </h1>
         
         <article className="app">
+            <Card title="#009 - Tabela de produtos" color="#395B64">
+                <ParOuImpar num={3}/>
+                <ParOuImpar num={2}/>
+                
+                <UserInfo usuario={usuario}/>
+                <UserInfo/>
+            </Card>
+
             <Card title="#008 - Tabela de produtos" color="#B33030">
                 <ProdutoList/>
             </Card>
