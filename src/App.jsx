@@ -15,6 +15,9 @@ import ProdutoList from './components/repeticao/TabelaProduto'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import UserInfo from './components/condicional/UserInfo'
 
+import DiretaPai from './components/comunicacao/DiretaPai';
+import IndiretaPai from './components/comunicacao/IndiretaPai';
+
 const styleH1 = {
     textAlign: 'center', 
     marginTop: '30px', 
@@ -29,6 +32,14 @@ export default () => (
         <h1 style={ styleH1 }> Fundamentos React </h1>
         
         <article className="app">
+            <Card title="#011 - Comunicaçao 02 indireta" color="#B8FFF9">
+                <IndiretaPai/>
+            </Card>
+
+            <Card title="#010 - Comunicaçao 01 direta" color="#495371">
+                <DiretaPai/>
+            </Card>
+
             <Card title="#009 - Tabela de produtos" color="#395B64">
                 <ParOuImpar num={3}/>
                 <ParOuImpar num={2}/>
