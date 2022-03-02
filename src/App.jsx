@@ -18,6 +18,8 @@ import UserInfo from './components/condicional/UserInfo'
 import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
 
+import InputForm from './components/form/input'
+
 const styleH1 = {
     textAlign: 'center', 
     marginTop: '30px', 
@@ -32,6 +34,10 @@ export default () => (
         <h1 style={ styleH1 }> Fundamentos React </h1>
         
         <article className="app">
+            <Card title="#012 - formulario input" color="#42C2FF">
+                <InputForm/>
+            </Card>
+
             <Card title="#011 - Comunicaçao 02 indireta" color="#B8FFF9">
                 <IndiretaPai/>
             </Card>
