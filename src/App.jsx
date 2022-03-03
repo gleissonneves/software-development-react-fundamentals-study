@@ -20,6 +20,7 @@ import IndiretaPai from './components/comunicacao/IndiretaPai';
 
 import InputForm from './components/form/input'
 import Contador from './components/contador/Contador'
+import Mega from './components/mega/Mega'
 
 const styleH1 = {
     textAlign: 'center', 
@@ -35,6 +36,10 @@ export default () => (
         <h1 style={ styleH1 }> Fundamentos React </h1>
         
         <article className="app">
+            <Card title="#014 - desafio | Mega sena" color="#B33030">
+                <Mega/>
+            </Card>
+
             <Card title="#013 - desafio | Contador" color="#B33030">
                 <Contador/>
             </Card>
