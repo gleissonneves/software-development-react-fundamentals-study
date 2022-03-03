@@ -19,6 +19,7 @@ import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
 
 import InputForm from './components/form/input'
+import Contador from './components/contador/Contador'
 
 const styleH1 = {
     textAlign: 'center', 
@@ -34,6 +35,10 @@ export default () => (
         <h1 style={ styleH1 }> Fundamentos React </h1>
         
         <article className="app">
+            <Card title="#013 - desafio | Contador" color="#B33030">
+                <Contador/>
+            </Card>
+
             <Card title="#012 - formulario input" color="#42C2FF">
                 <InputForm/>
             </Card>
